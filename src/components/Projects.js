@@ -71,10 +71,10 @@ export const Projects = () => {
                         <Row>
                           {projects.slice(0, 2).map((project, index) => (
                             <ProjectCard
-                              key={index}
+                              key={project.title}
                               title={project.title}
                               description={project.description}
-                              url={project.url}
+                              imgUrl={project.imgUrl}
                               img={project.img}
                             />
                           ))}
