@@ -7,6 +7,7 @@ import cert2 from "../assets/img/cert2.jpeg";
 import cert3 from "../assets/img/cert3.jpeg";
 import cert4 from "../assets/img/cert4.jpeg";
 import cert5 from "../assets/img/cert5.png";
+import cert6 from "../assets/img/cert6.jpeg";
 
 export default function Certificates() {
     const certificates = [
@@ -34,6 +35,11 @@ export default function Certificates() {
             title: "Intern & Team Lead Academy",
             imgUrl: "https://drive.google.com/file/d/1HAVNopZsz644p_lY8Q1Oogcr1DbC4RLR/view?pli=1",
             img: cert5
+        },
+        {
+            title: "PostgreSQL",
+            imgUrl: "https://softuni.bg/certificates/details/216935/1e04bc5e",
+            img: cert6
         },
 
     ];
