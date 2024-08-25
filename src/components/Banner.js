@@ -4,6 +4,7 @@ import headerImg from "../assets/img/header-img.svg";
 import { ArrowRightCircle } from 'react-bootstrap-icons';
 import 'animate.css';
 import TrackVisibility from 'react-on-screen';
+import { HashLink } from "react-router-hash-link";
 
 export const Banner = () => {
   const [loopNum, setLoopNum] = useState(0);
@@ -11,7 +12,7 @@ export const Banner = () => {
   const [text, setText] = useState('');
   const [delta, setDelta] = useState(300 - Math.random() * 100);
   const [index, setIndex] = useState(1);
-  const toRotate = [ "Angular Developer","React Developer", "Java Developer" ];
+  const toRotate = ["Angular Developer", "React Developer", "Java Developer"];
   const period = 2000;
 
   useEffect(() => {
@@ -46,6 +47,12 @@ export const Banner = () => {
       setIndex(prevIndex => prevIndex + 1);
     }
   }
+  const handleScroll = () => {
+    const section = document.getElementById('connect');
+    if (section) {
+      section.scrollIntoView({ behavior: 'smooth' });
+    }
+  };
 
   return (
     <section className="banner" id="home">
@@ -54,20 +61,21 @@ export const Banner = () => {
           <Col xs={12} md={6} xl={7}>
             <TrackVisibility>
               {({ isVisible }) =>
-              <div className={isVisible ? "animate__animated animate__fadeIn" : ""}>
-                <span className="tagline">Welcome to my Portfolio</span>
-                <h1>{`Hi! I'm Nina - `} <span className="txt-rotate" dataPeriod="1000" data-rotate='[ "Web Developer", "Web Designer", "UI/UX Designer" ]'><span className="wrap">{text}</span></span></h1>
-                  <p>An independent and self-motivated JavaScript and Java developer. Extremely passionate towards JavaScript, Type Script, Java, HTML and CSS. With some practical experience and desire to develop
-applications with React, Angular, Bootstrap, Tailwind /front- end/ and Express.js /back-end/ </p>
-                  <button onClick={() => console.log('connect')}>Let’s Connect <ArrowRightCircle size={25} /></button>
-              </div>}
+                <div className={isVisible ? "animate__animated animate__fadeIn" : ""}>
+                  <span className="tagline">Welcome to my Portfolio</span>
+                  <h1>{`Hi! I'm Nina - `} <span className="txt-rotate" dataperiod="1000" data-rotate='[ "Web Developer", "Web Designer", "UI/UX Designer" ]'><span className="wrap">{text}</span></span></h1>
+                  <p>An independent and self-motivated JavaScript and Java developer. Extremely passionate towards developing
+                    applications with React and Angular </p>
+                    <button onClick={handleScroll}>Let’s Connect <ArrowRightCircle size={25} /></button>
+                </div>}
+
             </TrackVisibility>
           </Col>
           <Col xs={12} md={6} xl={5}>
             <TrackVisibility>
               {({ isVisible }) =>
                 <div className={isVisible ? "animate__animated animate__zoomIn" : ""}>
-                  <img src={headerImg} alt="Header Img"/>
+                  <img src={headerImg} alt="Header Img" />
                 </div>}
             </TrackVisibility>
           </Col>

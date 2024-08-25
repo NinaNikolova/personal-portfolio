@@ -6,6 +6,8 @@ import 'react-multi-carousel/lib/styles.css';
 import arrow1 from "../assets/img/arrow1.svg";
 import arrow2 from "../assets/img/arrow2.svg";
 import colorSharp from "../assets/img/color-sharp.png"
+import { FaAngular, FaReact, FaJava, FaBootstrap, FaCss3Alt, FaHtml5 } from 'react-icons/fa';
+import { SiTailwindcss, SiTypescript, SiPostgresql, SiMicrosoftazure, SiFigma, SiDocker, SiJira, SiExpress, SiMongodb } from 'react-icons/si';
 
 export const Skills = () => {
   const responsive = {
@@ -35,30 +37,80 @@ export const Skills = () => {
                 <div className="col-12">
                     <div className="skill-bx wow zoomIn">
                         <h2>Skills</h2>
-                        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.<br></br> Lorem Ipsum has been the industry's standard dummy text.</p>
+                        <p>During my studies at Softuni and my participation in two internship programs, I gained experience анд скиллс and learned a lot of technologies:</p>
                         <Carousel responsive={responsive} infinite={true} className="owl-carousel owl-theme skill-slider">
                             <div className="item">
-                                <img src={meter1} alt="Image" />
-                                <h5>Web Development</h5>
+                            <FaAngular size={100} color="#dd1b16" />
+                                <h5>Angular</h5>
                             </div>
                             <div className="item">
-                                <img src={meter2} alt="Image" />
-                                <h5>Brand Identity</h5>
+                            <FaReact size={100} color="#61dafb" />
+                                <h5>React</h5>
                             </div>
                             <div className="item">
-                                <img src={meter3} alt="Image" />
-                                <h5>Logo Design</h5>
+                            <SiTypescript size={100} color="#007acc" />
+                                <h5>TypeScript</h5>
                             </div>
                             <div className="item">
-                                <img src={meter1} alt="Image" />
-                                <h5>Web Development</h5>
+                            <SiTailwindcss size={100} color="#38b2ac" />
+                                <h5>Tailwind</h5>
+                            </div>
+                            <div className="item">
+                            <FaJava size={100} color="#007396" />
+                                <h5>Java</h5>
+                            </div>
+                            <div className="item">
+                            <FaHtml5 size={100} color="#e34f26" />
+                                <h5>HTML</h5>
+                            </div>
+                            <div className="item">
+                            <FaBootstrap size={100} color="#7952b3" />
+                                <h5>Bootstrap</h5>
+                            </div>
+                            <div className="item">
+                            <FaCss3Alt size={100} color="#264de4" />
+                                <h5>CSS</h5>
+                            </div>
+                            <div className="item">
+                            <FaHtml5 size={100} color="#e34f26" />
+                                <h5>HTML</h5>
+                            </div>
+
+                            <div className="item">
+                            <SiPostgresql size={100} color="#336791" />
+                                <h5>Postgre</h5>
+                            </div>
+                            <div className="item">
+                            <SiMicrosoftazure size={100} color="#0078d4" />
+                                <h5>Azure</h5>
+                            </div>
+                            <div className="item">
+                            <SiFigma size={100} color="#f24e1e" />
+                                <h5>Figma</h5>
+                            </div>
+                            <div className="item">
+                            <SiDocker size={100} color="#2496ed" />
+                                <h5>Docker</h5>
+                            </div>
+
+                            <div className="item">
+                            <SiJira size={100} color="#0052CC" />
+                                <h5>Jira</h5>
+                            </div>
+                            <div className="item">
+                            <SiExpress size={100} color="#ffffff"  />
+                                <h5>Express.js</h5>
+                            </div>
+                            <div className="item">
+                            <SiMongodb size={100} color="#47A248" />
+                                <h5>MongoDB</h5>
                             </div>
                         </Carousel>
                     </div>
                 </div>
             </div>
         </div>
-        <img className="background-image-left" src={colorSharp} alt="Image" />
+        <img className="background-image-left" src={colorSharp} alt="Image5" />
     </section>
   )
 }
