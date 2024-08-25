@@ -6,6 +6,7 @@ import cert1 from "../assets/img/cert1.jpeg";
 import cert2 from "../assets/img/cert2.jpeg";
 import cert3 from "../assets/img/cert3.jpeg";
 import cert4 from "../assets/img/cert4.jpeg";
+import cert5 from "../assets/img/cert5.png";
 
 export default function Certificates() {
     const certificates = [
@@ -28,6 +29,11 @@ export default function Certificates() {
             title: "Java OOP-February 2024",
             imgUrl: "https://softuni.bg/certificates/details/211065/3ca50784",
             img: cert4
+        },
+        {
+            title: "Intern & Team Lead Academy",
+            imgUrl: "https://drive.google.com/file/d/1HAVNopZsz644p_lY8Q1Oogcr1DbC4RLR/view?pli=1",
+            img: cert5
         },
 
     ];

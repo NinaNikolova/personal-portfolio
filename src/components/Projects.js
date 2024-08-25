@@ -84,11 +84,11 @@ export const Projects = () => {
                         <Row>
                           {projects.slice(2, 4).map((project, index) => (
                             <ProjectCard
-                              key={index}
-                              title={project.title}
-                              description={project.description}
-                              url={project.url}
-                              img={project.img}
+                            key={project.title}
+                            title={project.title}
+                            description={project.description}
+                            imgUrl={project.imgUrl}
+                            img={project.img}
                             />
                           ))}
                         </Row>
@@ -97,11 +97,11 @@ export const Projects = () => {
                         <Row>
                           {projects.slice(4).map((project, index) => (
                             <ProjectCard
-                              key={index}
-                              title={project.title}
-                              description={project.description}
-                              url={project.url}
-                              img={project.img}
+                            key={project.title}
+                            title={project.title}
+                            description={project.description}
+                            imgUrl={project.imgUrl}
+                            img={project.img}
                             />
                           ))}
                         </Row>
