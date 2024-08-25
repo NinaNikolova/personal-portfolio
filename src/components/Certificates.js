@@ -89,7 +89,7 @@ export default function Certificates() {
                     <div className="col-12">
                         <div className="skill-bx wow zoomIn">
                             <h2>Certificates</h2>
-                            <p>During my studies at SoftUni, my participation in two internship programs there and Speed IT Up at Nemetschek Bulgaria, I gained experience, skills and learned a lot of technologies:</p>
+                            <p>During my studies at SoftUni, my participation in two internship programs and SpeedITUp at Nemetschek Bulgaria I gained experience, skills and learned a lot of technologies:</p>
                             <Carousel responsive={responsive} infinite={true} className="owl-carousel owl-theme skill-slider">
                                 {certificates?.map(c =>
                                     <div className="item">
