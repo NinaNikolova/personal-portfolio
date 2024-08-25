@@ -8,6 +8,9 @@ import cert3 from "../assets/img/cert3.jpeg";
 import cert4 from "../assets/img/cert4.jpeg";
 import cert5 from "../assets/img/cert5.png";
 import cert6 from "../assets/img/cert6.jpeg";
+import cert7 from "../assets/img/cert7.jpeg";
+import cert8 from "../assets/img/cert8.jpeg";
+import cert9 from "../assets/img/cert9.jpeg";
 
 export default function Certificates() {
     const certificates = [
@@ -37,9 +40,24 @@ export default function Certificates() {
             img: cert5
         },
         {
-            title: "PostgreSQL",
+            title: "PostgreSQL - May 2024",
             imgUrl: "https://softuni.bg/certificates/details/216935/1e04bc5e",
             img: cert6
+        },
+        {
+            title: "JS Advanced-September 2022",
+            imgUrl: "https://softuni.bg/certificates/details/145356/24d4c3a8",
+            img: cert7
+        },
+        {
+            title: "HTML & CSS - January 2022",
+            imgUrl: "https://softuni.bg/certificates/details/127626/4af97c58",
+            img: cert8
+        },
+        {
+            title: "Software Technologies - July2018",
+            imgUrl: "https://softuni.bg/certificates/details/56833/6cd31a3c",
+            img: cert9
         },
 
     ];
