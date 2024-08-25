@@ -47,7 +47,7 @@ export const Banner = () => {
     }
   }
   const handleScroll = () => {
-    const section = document.getElementById('connect');
+    const section = document.getElementById('skills');
     if (section) {
       section.scrollIntoView({ behavior: 'smooth' });
     }
@@ -63,9 +63,9 @@ export const Banner = () => {
                 <div className={isVisible ? "animate__animated animate__fadeIn" : ""}>
                   <span className="tagline">Welcome to my Portfolio</span>
                   <h1>{`Hi! I'm Nina - `} <span className="txt-rotate" dataperiod="1000" data-rotate='[ "Web Developer", "Web Designer", "UI/UX Designer" ]'><span className="wrap">{text}</span></span></h1>
-                  <p>An independent and self-motivated JavaScript and Java developer. Extremely passionate towards developing
-                    applications with React and Angular </p>
-                    <button onClick={handleScroll}>Let’s Connect <ArrowRightCircle size={25} /></button>
+                  <p>I'm an independent and self-motivated JavaScript and Java developer. I am extremely passionate towards developing
+                    apps with React and Angular. </p>
+                    <button onClick={handleScroll}>Let’s Start <ArrowRightCircle size={25} /></button>
                 </div>}
 
             </TrackVisibility>
