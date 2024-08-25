@@ -1,5 +1,4 @@
 import { Col } from "react-bootstrap";
-import { Link } from "react-router-dom";
 
 export const ProjectCard = ({ title, description, imgUrl, img }) => {
   return (
