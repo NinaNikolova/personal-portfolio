@@ -30,7 +30,7 @@ export const Softskills = () => {
   };
 
   return (
-    <section className="skill" id="Softskills">
+    <section className="skill" id="softskills">
       <div className="container">
         <div className="row">
           <div className="col-12">
