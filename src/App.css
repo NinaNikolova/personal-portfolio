@@ -63,6 +63,9 @@ button {
   border: 0;
   background-color: transparent;
 }
+.vvd{
+  border: #fff;
+}
 
 input:focus, textarea:focus, select:focus {
   outline: none;

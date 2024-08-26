@@ -52,6 +52,7 @@ export const NavBar = () => {
               <Nav.Link href="#skills" className={activeLink === 'skills' ? 'active navbar-link' : 'navbar-link'} onClick={() => onUpdateActiveLink('skills')}>Technical Skills</Nav.Link>
               <Nav.Link href="#softskills" className={activeLink === 'skills' ? 'active navbar-link' : 'navbar-link'} onClick={() => onUpdateActiveLink('softskills')}>Soft Skills</Nav.Link>
               <Nav.Link href="#projects" className={activeLink === 'projects' ? 'active navbar-link' : 'navbar-link'} onClick={() => onUpdateActiveLink('projects')}>Projects</Nav.Link>
+              <Nav.Link href="#certificates" className={activeLink === 'projects' ? 'active navbar-link' : 'navbar-link'} onClick={() => onUpdateActiveLink('certificates')}>Certificates</Nav.Link>
             </Nav>
             <span className="navbar-text">
               <div className="social-icon">
@@ -59,9 +60,7 @@ export const NavBar = () => {
 
                 <a href="https://github.com/NinaNikolova"><img src={navIcon3} alt="Icon" /></a>
               </div>
-              <Nav.Link href="#certificates">
-                <button className="vvd"><span>Certificates</span></button>
-              </Nav.Link>
+      
             </span>
           </Navbar.Collapse>
         </Container>

@@ -4,6 +4,7 @@ import headerImg from "../assets/img/header-img.svg";
 import { ArrowRightCircle } from 'react-bootstrap-icons';
 import 'animate.css';
 import TrackVisibility from 'react-on-screen';
+import Button from 'react-bootstrap/Button';
 
 export const Banner = () => {
   const [loopNum, setLoopNum] = useState(0);
@@ -65,7 +66,9 @@ export const Banner = () => {
                   <h1>{`Hi! I'm Nina - `} <span className="txt-rotate" dataperiod="1000" data-rotate='[ "Web Developer", "Web Designer", "UI/UX Designer" ]'><span className="wrap">{text}</span></span></h1>
                   <p>I'm an independent and self-motivated JavaScript and Java developer. I am extremely passionate towards developing
                     apps with React and Angular. </p>
-                    <button onClick={handleScroll}>Let’s Start <ArrowRightCircle size={25} /></button>
+                    <Button href="/resume.pdf"  download="Resume.pdf" variant="outline-light">Download Resume</Button>{' '}
+                    
+                    <button onClick={handleScroll}>Let’s Start <ArrowRightCircle size={25} /></button>       
                 </div>}
 
             </TrackVisibility>
