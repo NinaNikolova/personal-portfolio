@@ -135,7 +135,7 @@ export default function Certificates() {
                             <Carousel responsive={responsive} infinite={true} className="owl-carousel owl-theme skill-slider">
                                 {certificates?.map(c =>
                                     <div className="item">
-                                        <a href={c.imgUrl}>
+                                        <a href={c.imgUrl} className='no-underline'>
                                             <img src={c.img} alt={c.title} />
                                             <h5>{c.title}</h5></a>
                                     </div>

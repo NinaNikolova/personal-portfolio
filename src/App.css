@@ -47,6 +47,7 @@ p, a, li, button, ul {
   padding: 0;
   line-height: normal;
   text-decoration: none;
+  
 }
 
 a:hover {
@@ -65,6 +66,10 @@ button {
 
 input:focus, textarea:focus, select:focus {
   outline: none;
+}
+.no-underline {
+  text-decoration: none;
+  color: inherit; /* Optional: Keep the link's text color the same as the surrounding text */
 }
 
 @media (min-width:1700px) {
