@@ -66,7 +66,7 @@ export const Banner = () => {
                   <h1>{`Hi! I'm Nina - `} <span className="txt-rotate" dataperiod="1000" data-rotate='[ "Web Developer", "Web Designer", "UI/UX Designer" ]'><span className="wrap">{text}</span></span></h1>
                   <p>I'm an independent and self-motivated JavaScript and Java developer. I am extremely passionate towards developing
                     apps with React and Angular. </p>
-                    <Button href="/resume.pdf"  download="Resume.pdf" variant="outline-light">Download Resume</Button>{' '}
+                    <Button href="/Resume.pdf"  download="Resume.pdf" variant="outline-light">Download Resume</Button>{' '}
                     
                     <button onClick={handleScroll}>Let’s Start <ArrowRightCircle size={25} /></button>       
                 </div>}
