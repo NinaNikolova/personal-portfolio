@@ -11,6 +11,13 @@ import cert6 from "../assets/img/cert6.jpeg";
 import cert7 from "../assets/img/cert7.jpeg";
 import cert8 from "../assets/img/cert8.jpeg";
 import cert9 from "../assets/img/cert9.jpeg";
+import cert10 from "../assets/img/cert10.jpeg";
+import cert11 from "../assets/img/cert11.jpeg";
+import cert12 from "../assets/img/cert12.jpeg";
+import cert13 from "../assets/img/cert13.jpeg";
+import cert14 from "../assets/img/cert14.jpeg";
+import cert15 from "../assets/img/cert15.jpeg";
+import cert16 from "../assets/img/cert16.jpeg";
 
 export default function Certificates() {
     const certificates = [
@@ -58,6 +65,41 @@ export default function Certificates() {
             title: "Software Technologies - July2018",
             imgUrl: "https://softuni.bg/certificates/details/56833/6cd31a3c",
             img: cert9
+        },
+        {
+            title: "Programming Basics with Java - March 2018 - Honorable mention",
+            imgUrl: "https://softuni.bg/certificates/details/53854/9d4168c0",
+            img: cert10
+        },
+        {
+            title: "ReactJS - February 2023",
+            imgUrl: "https://softuni.bg/certificates/details/168611/6bbe309d",
+            img: cert11
+        },
+        {
+            title: "Angular - June 2023",
+            imgUrl: "https://softuni.bg/certificates/details/182994/647a6f7a",
+            img: cert12
+        },
+        {
+            title: "JS Back-End - May 2023",
+            imgUrl: "https://softuni.bg/certificates/details/175230/51bce23f",
+            img: cert13
+        },
+        {
+            title: "JS Applications - February 2023",
+            imgUrl: "https://softuni.bg/certificates/details/167781/ed8020f8",
+            img: cert14
+        },
+        {
+            title: "Programming Fundamentals with JavaScript - May 2022",
+            imgUrl: "https://softuni.bg/certificates/details/139037/70a130ce",
+            img: cert15
+        },
+        {
+            title: "Programming Basic - January 2022",
+            imgUrl: "https://softuni.bg/certificates/details/125134/4d6c8840",
+            img: cert16
         },
 
     ];
