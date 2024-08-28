@@ -21,6 +21,7 @@ export const Banner = () => {
     }, delta);
 
     return () => { clearInterval(ticker) };
+  // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [text])
 
   const tick = () => {
@@ -47,13 +48,7 @@ export const Banner = () => {
       setIndex(prevIndex => prevIndex + 1);
     }
   }
-  const handleScroll = () => {
-    const section = document.getElementById('skills');
-    if (section) {
-      section.scrollIntoView({ behavior: 'smooth' });
-    }
-  };
-
+console.log(index);
   return (
     <section className="banner" id="home">
       <Container>
@@ -67,9 +62,10 @@ export const Banner = () => {
                   <p>I'm an independent and self-motivated JavaScript and Java developer. I am extremely passionate towards developing
                     apps with React and Angular. </p>
                     <Button href="/Resume.pdf"  download="Resume.pdf" variant="outline-light">Download Resume</Button>{' '}
-                    
-                    <button onClick={handleScroll}>Let’s Start <ArrowRightCircle size={25} /></button>       
-                </div>}
+                   
+
+                     <a href="https://resume-7a12.onrender.com/" target="_blank" rel="noopener noreferrer" className="no-underline"><button> Go to Resume website <ArrowRightCircle size={25} />       
+                     </button></a>  </div> }
 
             </TrackVisibility>
           </Col>
