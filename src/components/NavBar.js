@@ -38,7 +38,7 @@ export const NavBar = () => {
       <Navbar expand="md" className={scrolled ? "scrolled" : ""}>
         <Container>
           <Navbar.Brand href="/">
-          <div  style={{ color: 'skyblue', fontSize: '50px', fontWeight:'bold' }}>
+          <div  style={{ color: 'skyblue', fontSize: '30px', fontWeight:'bold' }}>
     &lt;Code4Fun /&gt;
   </div>
 
