@@ -18,6 +18,7 @@ import cert13 from "../assets/img/cert13.jpeg";
 import cert14 from "../assets/img/cert14.jpeg";
 import cert15 from "../assets/img/cert15.jpeg";
 import cert16 from "../assets/img/cert16.jpeg";
+import cert17 from "../assets/img/cert17.jpeg";
 
 export default function Certificates() {
     const certificates = [
@@ -25,6 +26,11 @@ export default function Certificates() {
             title: "JS Web Developer Diploma",
             imgUrl: "https://softuni.bg/certificates/details/185271/46d18211",
             img: cert1
+        },
+        {
+            title: "Containers and Cloud - July 2024",
+            imgUrl: "https://softuni.bg/certificates/details/225479/ce73942a",
+            img: cert17
         },
         {
             title: "Java Advance- January 2024",
@@ -134,7 +140,7 @@ export default function Certificates() {
                             <p>During my studies at SoftUni, my participation in two internship programs and SpeedITUp at Nemetschek Bulgaria I gained experience, skills and learned a lot of technologies:</p>
                             <Carousel responsive={responsive} infinite={true} className="owl-carousel owl-theme skill-slider">
                                 {certificates?.map(c =>
-                                    <div className="item">
+                                    <div className="item" key={c.title}>
                                         <a href={c.imgUrl} className='no-underline'>
                                             <img src={c.img} alt={c.title} />
                                             <h5>{c.title}</h5></a>
