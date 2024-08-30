@@ -46,7 +46,7 @@ export const Projects = () => {
     {
       title: "Princess - TeddyBears- Candy - crush game",
       description: "Princess - TeddyBears- Candy - crush react game - under construction",
-      imgUrl: "https://66d18c45c8818452a23893c0--sensational-halva-f7eee1.netlify.app/",
+      imgUrl: "https://sensational-halva-f7eee1.netlify.app/",
       img: projImg6
     },
     
