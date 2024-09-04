@@ -75,6 +75,13 @@ input:focus, textarea:focus, select:focus {
   color: inherit; /* Optional: Keep the link's text color the same as the surrounding text */
 }
 
+.rounded-img {
+  border-radius: 50%; /* Makes the image fully circular */
+  width: 100%; /* Adjust as needed */
+  height: auto; /* Maintains aspect ratio */
+  object-fit: cover; /* Ensures the image covers the entire area without distortion */
+}
+
 @media (min-width:1700px) {
 	main .container {
 		max-width: 100%;
@@ -306,6 +313,12 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
 }
 .txt-rotate > .wrap {
   border-right: 0.08em solid #666;
+}
+.txt-rotate {
+  display: inline-block;
+  height: 1em; /* Adjust the height according to the tallest text */
+  line-height: 2em; /* Ensure proper vertical alignment */
+
 }
 
 /************ Skills Css ************/
