@@ -6,6 +6,8 @@ import projImg3 from "../assets/img/project-img3.png";
 import projImg4 from "../assets/img/project-img4.png";
 import projImg5 from "../assets/img/project-img5.png";
 import projImg6 from "../assets/img/project-img6.png";
+import projImg7 from "../assets/img/project-img7.png";
+import projImg8 from "../assets/img/project-img8.png";
 import colorSharp2 from "../assets/img/color-sharp2.png";
 import 'animate.css';
 import TrackVisibility from 'react-on-screen';
@@ -49,7 +51,19 @@ export const Projects = () => {
       imgUrl: "https://sensational-halva-f7eee1.netlify.app/",
       img: projImg6
     },
-    
+    {
+      title: "Тестове за входно ниво за 6-ти клас",
+      description: "Тестове за входно ниво за 6-ти клас",
+      imgUrl: "https://sunny-tanuki-49b78e.netlify.app/",
+      img: projImg8
+    },
+    {
+      title: "MySQL quiz",
+      description: "MySQL quiz",
+      imgUrl: "https://react-quiz-app-gq9s.onrender.com/",
+      img: projImg7
+    },
+
   ];
 
   return (
@@ -77,7 +91,7 @@ export const Projects = () => {
                     <Tab.Content id="slideInUp" className={isVisible ? "animate__animated animate__slideInUp" : ""}>
                       <Tab.Pane eventKey="first">
                         <Row>
-                          {projects.slice(0, 2).map((project, index) => (
+                          {projects.slice(0, 3).map((project, index) => (
                             <ProjectCard
                               key={project.title}
                               title={project.title}
@@ -90,26 +104,26 @@ export const Projects = () => {
                       </Tab.Pane>
                       <Tab.Pane eventKey="second">
                         <Row>
-                          {projects.slice(2, 4).map((project, index) => (
+                          {projects.slice(3, 6).map((project, index) => (
                             <ProjectCard
-                            key={project.title}
-                            title={project.title}
-                            description={project.description}
-                            imgUrl={project.imgUrl}
-                            img={project.img}
+                              key={project.title}
+                              title={project.title}
+                              description={project.description}
+                              imgUrl={project.imgUrl}
+                              img={project.img}
                             />
                           ))}
                         </Row>
                       </Tab.Pane>
                       <Tab.Pane eventKey="third">
                         <Row>
-                          {projects.slice(4).map((project, index) => (
+                          {projects.slice(6).map((project, index) => (
                             <ProjectCard
-                            key={project.title}
-                            title={project.title}
-                            description={project.description}
-                            imgUrl={project.imgUrl}
-                            img={project.img}
+                              key={project.title}
+                              title={project.title}
+                              description={project.description}
+                              imgUrl={project.imgUrl}
+                              img={project.img}
                             />
                           ))}
                         </Row>
