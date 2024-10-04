@@ -8,6 +8,7 @@ import projImg5 from "../assets/img/project-img5.png";
 import projImg6 from "../assets/img/project-img6.png";
 import projImg7 from "../assets/img/project-img7.png";
 import projImg8 from "../assets/img/project-img8.png";
+import projImg9 from "../assets/img/project-img9.png";
 import colorSharp2 from "../assets/img/color-sharp2.png";
 import 'animate.css';
 import TrackVisibility from 'react-on-screen';
@@ -62,6 +63,12 @@ export const Projects = () => {
       description: "MySQL quiz",
       imgUrl: "https://react-quiz-app-gq9s.onrender.com/",
       img: projImg7
+    },
+    {
+      title: "Hangman",
+      description: "Fun learning english",
+      imgUrl: "https://englishlearning6klas.netlify.app/",
+      img: projImg9
     },
 
   ];
