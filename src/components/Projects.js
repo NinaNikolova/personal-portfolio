@@ -70,6 +70,12 @@ export const Projects = () => {
       imgUrl: "https://englishlearning6klas.netlify.app/",
       img: projImg9
     },
+    {
+      title: "Software Technologies Quiz App",
+      description: "Software Technologies Master Degree Quiz App quiz",
+      imgUrl: "https://fmi-master-quizes.vercel.app/",
+      img: projImg7
+    },
 
   ];
 
