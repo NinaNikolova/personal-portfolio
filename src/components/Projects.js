@@ -76,6 +76,13 @@ export const Projects = () => {
       imgUrl: "https://fmi-master-quizes.vercel.app/",
       img: projImg7
     },
+    {
+      title: "Hangman",
+      description: "Fun learning Software Technologies",
+      imgUrl: "https://hangman-software-technologies.vercel.app/",
+      img: projImg9
+    },
+
 
   ];
 
