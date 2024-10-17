@@ -19,6 +19,7 @@ import cert14 from "../assets/img/cert14.jpeg";
 import cert15 from "../assets/img/cert15.jpeg";
 import cert16 from "../assets/img/cert16.jpeg";
 import cert17 from "../assets/img/cert17.jpeg";
+import cert18 from "../assets/img/cert18.jpeg";
 
 export default function Certificates() {
     const certificates = [
@@ -26,6 +27,11 @@ export default function Certificates() {
             title: "JS Web Developer Diploma",
             imgUrl: "https://softuni.bg/certificates/details/185271/46d18211",
             img: cert1
+        },
+        {
+            title: "MySQL - September 2024",
+            imgUrl: "https://softuni.bg/certificates/details/226214/e4019d94",
+            img: cert18
         },
         {
             title: "Containers and Cloud - July 2024",
