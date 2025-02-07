@@ -2,10 +2,7 @@ import { Container, Row, Col, Tab, Nav } from "react-bootstrap";
 import { ProjectCard } from "./ProjectCard";
 import projImg1 from "../assets/img/project-img1.png";
 import projImg2 from "../assets/img/project-img2.png";
-import projImg3 from "../assets/img/project-img3.png";
 import projImg4 from "../assets/img/project-img4.png";
-import projImg5 from "../assets/img/project-img5.png";
-import projImg6 from "../assets/img/project-img6.png";
 import projImg7 from "../assets/img/project-img7.png";
 import projImg8 from "../assets/img/project-img8.png";
 import projImg9 from "../assets/img/project-img9.png";
@@ -29,29 +26,12 @@ export const Projects = () => {
       img: projImg2
     },
     {
-      title: "Родът на моя котарак Криси",
-      description: "Thе project's name is Родът на моя котарак Криси. Its putpose is to design a system to store information about my pet's family tree according to the condition of the task given here: https://careers.nemetschek.bg/speeditup",
-      imgUrl: "https://my-pet-family-tree.vercel.app",
-      img: projImg3
-    },
-    {
       title: "B2114 DAT Compiler",
       description: "B2114 DAT Compiler-a family friend website",
       imgUrl: "https://b2114-datcompiler.xyz/",
       img: projImg4
     },
-    {
-      title: "У нас и по света с деца",
-      description: "Сайт за идеи за разходки, пътешествия и приключения на семейства с деца сред природата, по забележителности и интерсни места из България и по света.",
-      imgUrl: "https://unasiposvetasdeca.vercel.app/",
-      img: projImg5
-    },
-    {
-      title: "Princess - TeddyBears- Candy - crush game",
-      description: "Princess - TeddyBears- Candy - crush react game - under construction",
-      imgUrl: "https://sensational-halva-f7eee1.netlify.app/",
-      img: projImg6
-    },
+
     {
       title: "Тестове за входно ниво за 6-ти клас",
       description: "Тестове за входно ниво за 6-ти клас",
@@ -76,12 +56,7 @@ export const Projects = () => {
       imgUrl: "https://fmi-master-quizes.vercel.app/",
       img: projImg7
     },
-    {
-      title: "Hangman",
-      description: "Fun learning Software Technologies",
-      imgUrl: "https://hangman-software-technologies.vercel.app/",
-      img: projImg9
-    },
+
 
 
   ];
