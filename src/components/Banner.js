@@ -21,7 +21,7 @@ export const Banner = () => {
     }, delta);
 
     return () => { clearInterval(ticker) };
-  // eslint-disable-next-line react-hooks/exhaustive-deps
+    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [text])
 
   const tick = () => {
@@ -48,7 +48,7 @@ export const Banner = () => {
       setIndex(prevIndex => prevIndex + 1);
     }
   }
-console.log(index);
+  console.log(index);
   return (
     <section className="banner" id="home">
       <Container>
@@ -61,21 +61,23 @@ console.log(index);
                   <h1>{`Hi! I'm Nina - `} <span className="txt-rotate" dataperiod="1000" data-rotate='[ "Web Developer", "Web Designer", "UI/UX Designer" ]'><span className="wrap">{text}</span></span></h1>
                   <p>I'm an independent and self-motivated JavaScript and Java developer. I am extremely passionate towards developing
                     apps with React and Angular. </p>
-                    <Button href="/Resume.pdf"  download="Resume.pdf" variant="outline-light">Download Resume</Button>{' '}
-                   
+                  <Button href="/Resume.pdf" download="Resume.pdf" variant="outline-light">Download Resume</Button>{' '}
 
-                     <a href="https://resume-7a12.onrender.com/" target="_blank" rel="noopener noreferrer" className="no-underline"><button> Go to Resume website <ArrowRightCircle size={25} />       
-                     </button></a>  </div> }
+
+                  <a href="https://famous-dasik-f9f9db.netlify.app/" target="_blank" rel="noopener noreferrer" className="no-underline"><button> Go to Resume website <ArrowRightCircle size={25} />
+                  </button></a>  </div>}
 
             </TrackVisibility>
           </Col>
           <Col xs={12} md={6} xl={5}>
             <TrackVisibility>
               {({ isVisible }) =>
-                <div style={{ height: '260px',  display: 'flex',
+                <div style={{
+                  height: '260px', display: 'flex',
                   justifyContent: 'center',
-                  alignItems: 'center'  }} className={isVisible ? "animate__animated animate__zoomIn" : ""}>
-                  <img src={headerImg} alt="Header Img"  className="rounded-img" />
+                  alignItems: 'center'
+                }} className={isVisible ? "animate__animated animate__zoomIn" : ""}>
+                  <img src={headerImg} alt="Header Img" className="rounded-img" />
                 </div>}
             </TrackVisibility>
           </Col>

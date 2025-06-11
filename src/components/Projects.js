@@ -6,6 +6,7 @@ import projImg4 from "../assets/img/project-img4.png";
 import projImg7 from "../assets/img/project-img7.png";
 import projImg8 from "../assets/img/project-img8.png";
 import projImg9 from "../assets/img/project-img9.png";
+import projImg10 from "../assets/img/project-img10.png";
 import colorSharp2 from "../assets/img/color-sharp2.png";
 import 'animate.css';
 import TrackVisibility from 'react-on-screen';
@@ -31,18 +32,17 @@ export const Projects = () => {
       imgUrl: "https://b2114-datcompiler.xyz/",
       img: projImg4
     },
-
+    {
+      title: "PlayWithPy",
+      description: "Игри за учене на Python, КМИТ, 6-7 клас",
+      imgUrl: "https://python-games-rrib.onrender.com/",
+      img: projImg7
+    },
     {
       title: "Тестове за входно ниво за 6-ти клас",
       description: "Тестове за входно ниво за 6-ти клас",
       imgUrl: "https://sunny-tanuki-49b78e.netlify.app/",
       img: projImg8
-    },
-    {
-      title: "MySQL quiz",
-      description: "MySQL quiz",
-      imgUrl: "https://react-quiz-app-gq9s.onrender.com/",
-      img: projImg7
     },
     {
       title: "Hangman",
@@ -54,7 +54,7 @@ export const Projects = () => {
       title: "Software Technologies Quiz App",
       description: "Software Technologies Master Degree Quiz App quiz",
       imgUrl: "https://fmi-master-quizes.vercel.app/",
-      img: projImg7
+      img: projImg10
     },
 
 

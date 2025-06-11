@@ -2,8 +2,8 @@ import Carousel from 'react-multi-carousel';
 import 'react-multi-carousel/lib/styles.css';
 import colorSharp from "../assets/img/color-sharp.png"
 import { FaAngular, FaReact, FaJava, FaBootstrap, FaCss3Alt, FaHtml5 } from 'react-icons/fa';
-import { SiTailwindcss, SiTypescript, SiPostgresql, SiMicrosoftazure, SiFigma, SiDocker, SiJira, SiExpress, SiMongodb } from 'react-icons/si';
-
+import { SiTailwindcss, SiTypescript, SiPostgresql, SiFigma, SiDocker, SiJira, SiExpress, SiMongodb } from 'react-icons/si';
+import { VscAzure } from "react-icons/vsc";
 export const Skills = () => {
   const responsive = {
     superLargeDesktop: {
@@ -76,7 +76,7 @@ export const Skills = () => {
                   <h5>Postgre</h5>
                 </div>
                 <div className="item">
-                  <SiMicrosoftazure size={100} color="#0078d4" />
+                  <VscAzure size={100} color="#0078d4" />
                   <h5>Azure</h5>
                 </div>
                 <div className="item">
