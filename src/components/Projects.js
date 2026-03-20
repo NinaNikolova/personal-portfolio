@@ -5,7 +5,7 @@ import projImg2 from "../assets/img/project-img2.png";
 import projImg4 from "../assets/img/project-img4.png";
 import projImg7 from "../assets/img/project-img7.png";
 import projImg8 from "../assets/img/project-img8.png";
-import projImg9 from "../assets/img/project-img9.png";
+// import projImg9 from "../assets/img/project-img9.png";
 import projImg10 from "../assets/img/project-img10.png";
 import colorSharp2 from "../assets/img/color-sharp2.png";
 import 'animate.css';
@@ -23,7 +23,7 @@ export const Projects = () => {
     {
       title: "Garant Burgas",
       description: "Garant Burgas - As part of an Academy for trainees and team leaders /SoftUni/ I performed frontend development /as trainee/ with React, TypeScript and Tailwind. The result of our team work is part of the website of Garant Burgas",
-      imgUrl: "https://borsa.garantburgas.com/sectorRanking?origin_code=bg",
+      imgUrl: "https://borsa.garantburgas.com",
       img: projImg2
     },
     {
@@ -39,16 +39,10 @@ export const Projects = () => {
       img: projImg7
     },
     {
-      title: "Тестове за входно ниво за 6-ти клас",
-      description: "Тестове за входно ниво за 6-ти клас",
-      imgUrl: "https://sunny-tanuki-49b78e.netlify.app/",
+      title: "Играй с Ели",
+      description: "Игри за дъщеря ми /детската градина и малко гръцки и ветроходство/",
+      imgUrl: "https://beamish-tartufo-50e677.netlify.app/",
       img: projImg8
-    },
-    {
-      title: "Hangman",
-      description: "Fun learning english",
-      imgUrl: "https://englishlearning6klas.netlify.app/",
-      img: projImg9
     },
     {
       title: "Software Technologies Quiz App",
