@@ -22,7 +22,7 @@ export const translations = {
       tagline: "Welcome to my Portfolio",
       greeting: "Hi! I'm Nina - ",
       roles: ["Angular Developer", "React Developer", "Java Developer", "JavaScript Developer", "Accountant"],
-      description: "I’m an independent and self-motivated JavaScript and Java developer, passionate about building applications with React and Angular. I have 8 months of frontend development experience at EvolutionOfDreams and over 15 years of experience in accounting.",
+      description: "I’m a JavaScript and Java developer, passionate about building applications with React and Angular. I have 8 months of frontend development experience at EvolutionOfDreams and over 15 years of experience in accounting.",
       downloadResume: "Download Resume",
       goToResume: "Go to Resume website",
     },
