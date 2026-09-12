@@ -3,8 +3,10 @@ import { Container, Row, Col } from "react-bootstrap";
 import contactImg from "../assets/img/contact-img.svg";
 import 'animate.css';
 import TrackVisibility from 'react-on-screen';
+import { useLanguage } from '../i18n/LanguageContext';
 
 export const Contact = () => {
+  const { t } = useLanguage();
   const formInitialDetails = {
     firstName: '',
     lastName: '',
@@ -12,7 +14,7 @@ export const Contact = () => {
     message: ''
   }
   const [formDetails, setFormDetails] = useState(formInitialDetails);
-  const [buttonText, setButtonText] = useState('Send');
+  const [isSubmitting, setIsSubmitting] = useState(false);
   const [status, setStatus] = useState({});
 
   const onFormUpdate = (category, value) => {
@@ -24,7 +26,7 @@ export const Contact = () => {
 
   const handleSubmit = async (e) => {
     e.preventDefault();
-    setButtonText("Sending...");
+    setIsSubmitting(true);
     const formData = new FormData(e.target);
     formData.append("access_key", process.env.REACT_APP_WEB3FORMS_KEY);
     formData.append("name", `${formDetails.firstName} ${formDetails.lastName}`);
@@ -34,13 +36,13 @@ export const Contact = () => {
       method: "POST",
       body: formData,
     });
-    setButtonText("Send");
+    setIsSubmitting(false);
     let result = await response.json();
     setFormDetails(formInitialDetails);
     if (result.success) {
-      setStatus({ success: true, message: 'Message sent successfully'});
+      setStatus({ success: true });
     } else {
-      setStatus({ success: false, message: 'Something went wrong, please try again later.'});
+      setStatus({ success: false });
     }
   };
 
@@ -51,7 +53,7 @@ export const Contact = () => {
           <Col size={12} md={6}>
             <TrackVisibility>
               {({ isVisible }) =>
-                <img className={isVisible ? "animate__animated animate__zoomIn" : ""} src={contactImg} alt="Contact Us"/>
+                <img className={isVisible ? "animate__animated animate__zoomIn" : ""} src={contactImg} alt={t.contact.imgAlt}/>
               }
             </TrackVisibility>
           </Col>
@@ -59,26 +61,26 @@ export const Contact = () => {
             <TrackVisibility>
               {({ isVisible }) =>
                 <div className={isVisible ? "animate__animated animate__fadeIn" : ""}>
-                <h2>Get In Touch</h2>
+                <h2>{t.contact.title}</h2>
                 <form onSubmit={handleSubmit}>
                   <Row>
                     <Col size={12} sm={6} className="px-1">
-                      <input type="text" name="firstName" value={formDetails.firstName} placeholder="First Name" onChange={(e) => onFormUpdate('firstName', e.target.value)} />
+                      <input type="text" name="firstName" value={formDetails.firstName} placeholder={t.contact.firstName} onChange={(e) => onFormUpdate('firstName', e.target.value)} />
                     </Col>
                     <Col size={12} sm={6} className="px-1">
-                      <input type="text" name="lastName" value={formDetails.lastName} placeholder="Last Name" onChange={(e) => onFormUpdate('lastName', e.target.value)}/>
+                      <input type="text" name="lastName" value={formDetails.lastName} placeholder={t.contact.lastName} onChange={(e) => onFormUpdate('lastName', e.target.value)}/>
                     </Col>
                     <Col size={12} className="px-1">
-                      <input type="email" name="email" value={formDetails.email} placeholder="Email Address" onChange={(e) => onFormUpdate('email', e.target.value)} />
+                      <input type="email" name="email" value={formDetails.email} placeholder={t.contact.email} onChange={(e) => onFormUpdate('email', e.target.value)} />
                     </Col>
                     <Col size={12} className="px-1">
-                      <textarea rows="6" name="message" value={formDetails.message} placeholder="Message" onChange={(e) => onFormUpdate('message', e.target.value)}></textarea>
-                      <button type="submit"><span>{buttonText}</span></button>
+                      <textarea rows="6" name="message" value={formDetails.message} placeholder={t.contact.message} onChange={(e) => onFormUpdate('message', e.target.value)}></textarea>
+                      <button type="submit"><span>{isSubmitting ? t.contact.sending : t.contact.send}</span></button>
                     </Col>
                     {
-                      status.message &&
+                      status.success !== undefined &&
                       <Col>
-                        <p className={status.success === false ? "danger" : "success"}>{status.message}</p>
+                        <p className={status.success === false ? "danger" : "success"}>{status.success === false ? t.contact.error : t.contact.success}</p>
                       </Col>
                     }
                   </Row>
