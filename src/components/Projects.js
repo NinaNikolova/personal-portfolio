@@ -12,67 +12,71 @@ import projImg10 from "../assets/img/project-img10.png";
 import colorSharp2 from "../assets/img/color-sharp2.png";
 import 'animate.css';
 import TrackVisibility from 'react-on-screen';
+import { useLanguage } from '../i18n/LanguageContext';
+
+const projectsMeta = [
+  {
+    key: "ninaResume",
+    title: "Nina's Resume",
+    imgUrl: "https://personal-portfolio-hazel-six.vercel.app/",
+    img: projImg1
+  },
+  {
+    key: "garantBurgas",
+    title: "Garant Burgas",
+    imgUrl: "https://borsa.garantburgas.com",
+    img: projImg2
+  },
+  {
+    key: "manifestCode",
+    title: "ManifestCode",
+    imgUrl: "https://manifest-code.com/",
+    img: projImg4
+  },
+  {
+    key: "playWithPy",
+    title: "PlayWithPy",
+    imgUrl: "https://python-games-rrib.onrender.com/",
+    img: projImg7
+  },
+  {
+    key: "playWithEli",
+    title: "Играй с Ели",
+    imgUrl: "https://beamish-tartufo-50e677.netlify.app/",
+    img: projImg8
+  },
+  {
+    key: "quizApp",
+    title: "Software Technologies Quiz App",
+    imgUrl: "https://fmi-master-quizes.vercel.app/",
+    img: projImg10
+  },
+  {
+    key: "marbirec",
+    title: "Marbirec",
+    imgUrl: "https://marbirec.com/",
+    img: projImg9
+  },
+  {
+    key: "credito",
+    title: "Credito",
+    imgUrl: "https://credito.bg",
+    img: projImg3
+  },
+  {
+    key: "golfClub",
+    title: "GolfClubAirSofia",
+    imgUrl: "https://golfclubsofia.com/",
+    img: projImg5
+  },
+];
 
 export const Projects = () => {
-
-  const projects = [
-    {
-      title: "Nina's Resume",
-      description: "Current project...",
-      imgUrl: "https://personal-portfolio-hazel-six.vercel.app/",
-      img: projImg1
-    },
-    {
-      title: "Garant Burgas",
-      description: "Garant Burgas - As part of an Academy for trainees and team leaders /SoftUni/ I performed frontend development /as trainee/ with React, TypeScript and Tailwind. The result of our team work is part of the website of Garant Burgas",
-      imgUrl: "https://borsa.garantburgas.com",
-      img: projImg2
-    },
-    {
-      title: "ManifestCode",
-      description: "ManifestCode-as frontend developer I worked on the development of the website of ManifestCode, using Angular, TypeScript and Ionic.",
-      imgUrl: "https://manifest-code.com/",
-      img: projImg4
-    },
-    {
-      title: "PlayWithPy",
-      description: "Игри за учене на Python, КМИТ, 6-7 клас",
-      imgUrl: "https://python-games-rrib.onrender.com/",
-      img: projImg7
-    },
-    {
-      title: "Играй с Ели",
-      description: "Игри за дъщеря ми /детската градина и малко гръцки и ветроходство/",
-      imgUrl: "https://beamish-tartufo-50e677.netlify.app/",
-      img: projImg8
-    },
-    {
-      title: "Software Technologies Quiz App",
-      description: "Software Technologies Master Degree Quiz App quiz",
-      imgUrl: "https://fmi-master-quizes.vercel.app/",
-      img: projImg10
-    },
-    {
-      title: "Marbirec",
-      description: "Marbirec - As frontend developer I worked on the development of the website of Marbirec, using React.",
-      imgUrl: "https://marbirec.com/",
-      img: projImg9
-    },
-        {
-      title: "Credito",
-      description: "Credito - As frontend developer I worked on the development of the website of Credito, using Angular.",
-      imgUrl: "https://credito.bg",
-      img: projImg3
-    },
-            {
-      title: "GolfClubAirSofia",
-      description: "GolfClubAirSofia - As frontend developer I worked on the development of the website of GolfClubAirSofia, using WordPress.",
-      imgUrl: "https://golfclubsofia.com/",
-      img: projImg5
-    },
-
-
-  ];
+  const { t } = useLanguage();
+  const projects = projectsMeta.map((project) => ({
+    ...project,
+    description: t.projects.items[project.key],
+  }));
 
   return (
     <section className="project" id="projects">
@@ -82,18 +86,18 @@ export const Projects = () => {
             <TrackVisibility>
               {({ isVisible }) =>
                 <div className={isVisible ? "animate__animated animate__fadeIn" : ""}>
-                  <h2>Projects</h2>
-                  <p>Here are some of my completed projects:</p>
+                  <h2>{t.projects.title}</h2>
+                  <p>{t.projects.subtitle}</p>
                   <Tab.Container id="projects-tabs" defaultActiveKey="first">
                     <Nav variant="pills" className="nav-pills mb-5 justify-content-center align-items-center" id="pills-tab">
                       <Nav.Item>
-                        <Nav.Link eventKey="first">Tab 1</Nav.Link>
+                        <Nav.Link eventKey="first">{t.projects.tabs[0]}</Nav.Link>
                       </Nav.Item>
                       <Nav.Item>
-                        <Nav.Link eventKey="second">Tab 2</Nav.Link>
+                        <Nav.Link eventKey="second">{t.projects.tabs[1]}</Nav.Link>
                       </Nav.Item>
                       <Nav.Item>
-                        <Nav.Link eventKey="third">Tab 3</Nav.Link>
+                        <Nav.Link eventKey="third">{t.projects.tabs[2]}</Nav.Link>
                       </Nav.Item>
                     </Nav>
                     <Tab.Content id="slideInUp" className={isVisible ? "animate__animated animate__slideInUp" : ""}>
@@ -101,7 +105,7 @@ export const Projects = () => {
                         <Row>
                           {projects.slice(0, 3).map((project, index) => (
                             <ProjectCard
-                              key={project.title}
+                              key={project.key}
                               title={project.title}
                               description={project.description}
                               imgUrl={project.imgUrl}
@@ -114,7 +118,7 @@ export const Projects = () => {
                         <Row>
                           {projects.slice(3, 6).map((project, index) => (
                             <ProjectCard
-                              key={project.title}
+                              key={project.key}
                               title={project.title}
                               description={project.description}
                               imgUrl={project.imgUrl}
@@ -127,7 +131,7 @@ export const Projects = () => {
                         <Row>
                           {projects.slice(6).map((project, index) => (
                             <ProjectCard
-                              key={project.title}
+                              key={project.key}
                               title={project.title}
                               description={project.description}
                               imgUrl={project.imgUrl}

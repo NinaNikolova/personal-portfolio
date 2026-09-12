@@ -8,6 +8,7 @@ import { Projects } from "./components/Projects";
 import { Footer } from "./components/Footer";
 import Certificates from './components/Certificates';
 import { Softskills } from './components/Softskills';
+import { LanguageProvider } from './i18n/LanguageContext';
 
 const THEME_STORAGE_KEY = 'portfolio-theme';
 
@@ -26,16 +27,18 @@ function App() {
   };
 
   return (
-    <div className="App">
-      <NavBar theme={theme} toggleTheme={toggleTheme} />
-      <Banner />
-      <Skills />
-      <Softskills />
-      <Projects />
-      {/* <Contact /> */}
-      <Certificates />
-      <Footer />
-    </div>
+    <LanguageProvider>
+      <div className="App">
+        <NavBar theme={theme} toggleTheme={toggleTheme} />
+        <Banner />
+        <Skills />
+        <Softskills />
+        <Projects />
+        {/* <Contact /> */}
+        <Certificates />
+        <Footer />
+      </div>
+    </LanguageProvider>
   );
 }
 

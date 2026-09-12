@@ -209,6 +209,28 @@ span.navbar-text {
   border-color: transparent;
   transform: rotate(20deg);
 }
+.navbar-text .language-toggle-btn {
+  width: 42px;
+  height: 42px;
+  min-width: 42px;
+  flex-shrink: 0;
+  padding: 0;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  margin-left: 10px;
+  border-radius: 50%;
+  color: #fff;
+  font-size: 13px;
+  font-weight: 700;
+  border: 1px solid rgba(255, 255, 255, 0.5);
+  background: rgba(217, 217, 217, 0.1);
+  transition: 0.3s ease-in-out;
+}
+.navbar-text .language-toggle-btn:hover {
+  background: var(--accent-gradient);
+  border-color: transparent;
+}
 .navbar-text button {
   font-weight: 700;
   color: #fff;

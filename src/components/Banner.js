@@ -5,14 +5,16 @@ import { ArrowRightCircle } from 'react-bootstrap-icons';
 import 'animate.css';
 import TrackVisibility from 'react-on-screen';
 import Button from 'react-bootstrap/Button';
+import { useLanguage } from '../i18n/LanguageContext';
 
 export const Banner = () => {
+  const { t } = useLanguage();
   const [loopNum, setLoopNum] = useState(0);
   const [isDeleting, setIsDeleting] = useState(false);
   const [text, setText] = useState('');
   const [delta, setDelta] = useState(300 - Math.random() * 100);
   const [index, setIndex] = useState(1);
-  const toRotate = ["Angular Developer", "React Developer", "Java Developer", "JavaScript Developer", "Accountant"];
+  const toRotate = t.banner.roles;
   const period = 2000;
 
   useEffect(() => {
@@ -57,13 +59,13 @@ export const Banner = () => {
             <TrackVisibility>
               {({ isVisible }) =>
                 <div className={isVisible ? "animate__animated animate__fadeIn" : ""}>
-                  <span className="tagline">Welcome to my Portfolio</span>
-                  <h1>{`Hi! I'm Nina - `} <span className="txt-rotate" dataperiod="1000" data-rotate='[ "Web Developer", "Web Designer", "UI/UX Designer" ]'><span className="wrap">{text}</span></span></h1>
-                  <p>I’m an independent and self-motivated JavaScript and Java developer, passionate about building applications with React and Angular. I have 8 months of frontend development experience at EvolutionOfDreams and over 15 years of experience in accounting. </p>
-                  <Button href="/Resume.pdf" download="Resume.pdf" variant="outline-light">Download Resume</Button>{' '}
+                  <span className="tagline">{t.banner.tagline}</span>
+                  <h1>{t.banner.greeting} <span className="txt-rotate" dataperiod="1000" data-rotate='[ "Web Developer", "Web Designer", "UI/UX Designer" ]'><span className="wrap">{text}</span></span></h1>
+                  <p>{t.banner.description}</p>
+                  <Button href="/Resume.pdf" download="Resume.pdf" variant="outline-light">{t.banner.downloadResume}</Button>{' '}
 
 
-                  <a href="https://famous-dasik-f9f9db.netlify.app/" target="_blank" rel="noopener noreferrer" className="no-underline"><button> Go to Resume website <ArrowRightCircle size={25} />
+                  <a href="https://famous-dasik-f9f9db.netlify.app/" target="_blank" rel="noopener noreferrer" className="no-underline"><button> {t.banner.goToResume} <ArrowRightCircle size={25} />
                   </button></a>  </div>}
 
             </TrackVisibility>

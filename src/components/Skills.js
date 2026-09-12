@@ -4,7 +4,9 @@ import colorSharp from "../assets/img/color-sharp.png"
 import { FaAngular, FaReact, FaJava, FaBootstrap, FaCss3Alt, FaHtml5 } from 'react-icons/fa';
 import { SiTailwindcss, SiTypescript, SiPostgresql, SiFigma, SiDocker, SiJira, SiExpress, SiMongodb } from 'react-icons/si';
 import { VscAzure } from "react-icons/vsc";
+import { useLanguage } from "../i18n/LanguageContext";
 export const Skills = () => {
+  const { t } = useLanguage();
   const responsive = {
     superLargeDesktop: {
       // the naming can be any, depends on you.
@@ -31,8 +33,8 @@ export const Skills = () => {
         <div className="row">
           <div className="col-12">
             <div className="skill-bx wow zoomIn">
-              <h2>Technical Skills</h2>
-              <p>During my studies and professional experience, including my time at SoftUni and two internship programs at SoftUni and Speed IT Up at Nemetschek Bulgaria, I gained valuable experience, developed my skills, and learned various technologies. I am currently completing my Master’s degree in Software Technologies at Sofia University, while my 15+ years of accounting experience includes working with MS Navision ERP and Excel.</p>
+              <h2>{t.skills.title}</h2>
+              <p>{t.skills.description}</p>
               <Carousel responsive={responsive} infinite={true} className="owl-carousel owl-theme skill-slider">
                 <div className="item">
                   <FaAngular size={100} color="#dd1b16" />
