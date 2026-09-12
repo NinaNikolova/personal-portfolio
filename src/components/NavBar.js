@@ -1,5 +1,6 @@
 import { useState, useEffect } from "react";
 import { Navbar, Nav, Container } from "react-bootstrap";
+import { Sun, MoonStarsFill } from "react-bootstrap-icons";
 import navIcon1 from '../assets/img/nav-icon1.svg';
 
 import navIcon3 from '../assets/img/nav-icon3.svg';
@@ -10,7 +11,7 @@ import {
 } from "react-router-dom";
 
 
-export const NavBar = () => {
+export const NavBar = ({ theme, toggleTheme }) => {
 
   const [activeLink, setActiveLink] = useState('home');
   const [scrolled, setScrolled] = useState(false);
@@ -60,7 +61,15 @@ export const NavBar = () => {
 
                 <a href="https://github.com/NinaNikolova"><img src={navIcon3} alt="Icon" /></a>
               </div>
-      
+              <button
+                type="button"
+                className="theme-toggle-btn"
+                onClick={toggleTheme}
+                aria-label={theme === 'dark' ? 'Switch to light theme' : 'Switch to dark theme'}
+                title={theme === 'dark' ? 'Switch to sea theme' : 'Switch to dark theme'}
+              >
+                {theme === 'dark' ? <Sun size={20} /> : <MoonStarsFill size={20} />}
+              </button>
             </span>
           </Navbar.Collapse>
         </Container>

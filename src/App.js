@@ -1,3 +1,4 @@
+import { useEffect, useState } from 'react';
 import './App.css';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import { NavBar } from "./components/NavBar";
@@ -8,10 +9,25 @@ import { Footer } from "./components/Footer";
 import Certificates from './components/Certificates';
 import { Softskills } from './components/Softskills';
 
+const THEME_STORAGE_KEY = 'portfolio-theme';
+
 function App() {
+  const [theme, setTheme] = useState(() => {
+    return localStorage.getItem(THEME_STORAGE_KEY) || 'dark';
+  });
+
+  useEffect(() => {
+    document.documentElement.setAttribute('data-theme', theme);
+    localStorage.setItem(THEME_STORAGE_KEY, theme);
+  }, [theme]);
+
+  const toggleTheme = () => {
+    setTheme((prev) => (prev === 'dark' ? 'light' : 'dark'));
+  };
+
   return (
     <div className="App">
-      <NavBar />
+      <NavBar theme={theme} toggleTheme={toggleTheme} />
       <Banner />
       <Skills />
       <Softskills />
