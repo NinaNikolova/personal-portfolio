@@ -22,13 +22,13 @@ export const translations = {
       tagline: "Welcome to my Portfolio",
       greeting: "Hi! I'm Nina - ",
       roles: ["Angular Developer", "React Developer", "Java Developer", "JavaScript Developer", "Accountant"],
-      description: "I’m a JavaScript and Java developer, passionate about building applications with React and Angular. I have 8 months of frontend development experience at EvolutionOfDreams and over 15 years of experience in accounting.",
+      description: "I’m a JavaScript and Java developer, passionate about building applications with React and Angular. I have 8 months of frontend development experience at EvolutionOfDreams, 6months of experience at different projects and over 15 years of experience in accounting.",
       downloadResume: "Download Resume",
       goToResume: "Go to Resume website",
     },
     skills: {
       title: "Technical Skills",
-      description: "During my studies and professional experience, including my time at SoftUni and two internship programs at SoftUni and Speed IT Up at Nemetschek Bulgaria, I gained valuable experience, developed my skills, and learned various technologies. I am currently completing my Master’s degree in Software Technologies at Sofia University, while my 15+ years of accounting experience includes working with MS Navision ERP and Excel.",
+      description: "During my studies and professional experience, including my time at EvolutionOfDreams and two internship programs at SoftUni and Speed IT Up at Nemetschek Bulgaria, I gained valuable experience, developed my skills, and learned various technologies. I am currently completing my Master’s degree in Software Technologies at Sofia University, while my 15+ years of accounting experience includes working with MS Navision ERP and Excel.",
     },
     softskills: {
       title: "Soft Skills",
@@ -58,7 +58,7 @@ export const translations = {
     },
     certificates: {
       title: "Certificates",
-      description: "During my studies at SoftUni, my participation in two internship programs and SpeedITUp at Nemetschek Bulgaria I gained experience, skills and learned a lot of technologies:",
+      description: "During my work in EvolutionOfDreams, my participation in two internship programs and SpeedITUp at Nemetschek Bulgaria I gained experience, skills and learned a lot of technologies:",
       items: {
         jsWebDeveloper: "JS Web Developer Diploma",
         mysql: "MySQL - September 2024",
@@ -119,13 +119,13 @@ export const translations = {
       tagline: "Добре дошли в моето портфолио",
       greeting: "Здравей! Аз съм Нина - ",
       roles: ["Angular разработчик", "React разработчик", "Java разработчик", "JavaScript разработчик", "Счетоводител"],
-      description: "Аз съм JavaScript и Java разработчик, запален по създаването на приложения с React и Angular. Имам 8 месеца опит във frontend разработката в EvolutionOfDreams и над 15 години опит в счетоводството.",
+      description: "Аз съм JavaScript и Java разработчик, запален по създаването на приложения с React и Angular. Имам 8 месеца опит във frontend разработката в EvolutionOfDreams, 6 месеца опит в различни проекти и над 15 години опит в счетоводството.",
       downloadResume: "Изтегли автобиография",
       goToResume: "Към сайта с автобиографията",
     },
     skills: {
       title: "Технически умения",
-      description: "По време на обучението и професионалния си опит, включително ми в SoftUni и две стажантски програми в SoftUni и Speed IT Up в Nemetschek България, придобих ценен опит, развих уменията си и научих различни технологии. В момента завършвам магистърска степен по Софтуерни технологии в Софийския университет, а над 15-годишният ми опит в счетоводството включва работа с ERP системата MS Navision и Excel.",
+      description: "По време на обучението и професионалния си опит в EvolutionOfDreams и две стажантски програми в SoftUni и Speed IT Up в Nemetschek България, придобих ценен опит, развих уменията си и научих различни технологии. В момента завършвам магистърска степен по Софтуерни технологии в Софийския университет, а над 15-годишният ми опит в счетоводството включва работа с ERP системата MS Navision и Excel.",
     },
     softskills: {
       title: "Меки умения",
