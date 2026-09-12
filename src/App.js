@@ -9,7 +9,7 @@ import { Footer } from "./components/Footer";
 import Certificates from './components/Certificates';
 import { Softskills } from './components/Softskills';
 import { LanguageProvider } from './i18n/LanguageContext';
-
+import {Contact} from './components/Contact';
 const THEME_STORAGE_KEY = 'portfolio-theme';
 
 function App() {
@@ -34,7 +34,7 @@ function App() {
         <Skills />
         <Softskills />
         <Projects />
-        {/* <Contact /> */}
+        <Contact />
         <Certificates />
         <Footer />
       </div>
