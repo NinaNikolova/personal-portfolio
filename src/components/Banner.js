@@ -59,8 +59,7 @@ export const Banner = () => {
                 <div className={isVisible ? "animate__animated animate__fadeIn" : ""}>
                   <span className="tagline">Welcome to my Portfolio</span>
                   <h1>{`Hi! I'm Nina - `} <span className="txt-rotate" dataperiod="1000" data-rotate='[ "Web Developer", "Web Designer", "UI/UX Designer" ]'><span className="wrap">{text}</span></span></h1>
-                  <p>I'm an independent and self-motivated JavaScript and Java developer. I am extremely passionate towards developing
-                    apps with React and Angular. </p>
+                  <p>I’m an independent and self-motivated JavaScript and Java developer, passionate about building applications with React and Angular. I have 8 months of frontend development experience at EvolutionOfDreams and over 15 years of experience in accounting. </p>
                   <Button href="/Resume.pdf" download="Resume.pdf" variant="outline-light">Download Resume</Button>{' '}
 
 

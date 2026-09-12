@@ -32,7 +32,7 @@ export const Skills = () => {
           <div className="col-12">
             <div className="skill-bx wow zoomIn">
               <h2>Technical Skills</h2>
-              <p>During my studies at SoftUni, my participation in two internship programs there and Speed IT Up at Nemetschek Bulgaria, I gained experience, skills and learned a lot of technologies:</p>
+              <p>During my studies and professional experience, including my time at SoftUni and two internship programs at SoftUni and Speed IT Up at Nemetschek Bulgaria, I gained valuable experience, developed my skills, and learned various technologies. I am currently completing my Master’s degree in Software Technologies at Sofia University, while my 15+ years of accounting experience includes working with MS Navision ERP and Excel.</p>
               <Carousel responsive={responsive} infinite={true} className="owl-carousel owl-theme skill-slider">
                 <div className="item">
                   <FaAngular size={100} color="#dd1b16" />

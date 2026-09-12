@@ -2,10 +2,12 @@ import { Container, Row, Col, Tab, Nav } from "react-bootstrap";
 import { ProjectCard } from "./ProjectCard";
 import projImg1 from "../assets/img/project-img1.png";
 import projImg2 from "../assets/img/project-img2.png";
+import projImg3 from "../assets/img/project-img3.png";
 import projImg4 from "../assets/img/project-img4.png";
+import projImg5 from "../assets/img/project-img5.png";
 import projImg7 from "../assets/img/project-img7.png";
 import projImg8 from "../assets/img/project-img8.png";
-// import projImg9 from "../assets/img/project-img9.png";
+import projImg9 from "../assets/img/project-img9.png";
 import projImg10 from "../assets/img/project-img10.png";
 import colorSharp2 from "../assets/img/color-sharp2.png";
 import 'animate.css';
@@ -27,9 +29,9 @@ export const Projects = () => {
       img: projImg2
     },
     {
-      title: "B2114 DAT Compiler",
-      description: "B2114 DAT Compiler-a family friend website",
-      imgUrl: "https://b2114-datcompiler.xyz/",
+      title: "ManifestCode",
+      description: "ManifestCode-as frontend developer I worked on the development of the website of ManifestCode, using Angular, TypeScript and Ionic.",
+      imgUrl: "https://manifest-code.com/",
       img: projImg4
     },
     {
@@ -50,7 +52,24 @@ export const Projects = () => {
       imgUrl: "https://fmi-master-quizes.vercel.app/",
       img: projImg10
     },
-
+    {
+      title: "Marbirec",
+      description: "Marbirec - As frontend developer I worked on the development of the website of Marbirec, using React.",
+      imgUrl: "https://marbirec.com/",
+      img: projImg9
+    },
+        {
+      title: "Credito",
+      description: "Credito - As frontend developer I worked on the development of the website of Credito, using Angular.",
+      imgUrl: "https://credito.bg",
+      img: projImg3
+    },
+            {
+      title: "GolfClubAirSofia",
+      description: "GolfClubAirSofia - As frontend developer I worked on the development of the website of GolfClubAirSofia, using WordPress.",
+      imgUrl: "https://golfclubsofia.com/",
+      img: projImg5
+    },
 
 
   ];
