@@ -1,14 +1,16 @@
 import { useState, useEffect } from "react";
 import { Container, Row, Col } from "react-bootstrap";
 import headerImg from "../assets/img/header-img2.jpg";
+import banner2Img from "../assets/img/banner2.png";
 import { ArrowRightCircle } from 'react-bootstrap-icons';
 import 'animate.css';
 import TrackVisibility from 'react-on-screen';
 import Button from 'react-bootstrap/Button';
 import { useLanguage } from '../i18n/LanguageContext';
 
-export const Banner = () => {
+export const Banner = ({ theme }) => {
   const { t } = useLanguage();
+  const bannerImg = theme === 'light' ? banner2Img : headerImg;
   const [loopNum, setLoopNum] = useState(0);
   const [isDeleting, setIsDeleting] = useState(false);
   const [text, setText] = useState('');
@@ -78,7 +80,7 @@ export const Banner = () => {
                   justifyContent: 'center',
                   alignItems: 'center'
                 }} className={isVisible ? "animate__animated animate__zoomIn" : ""}>
-                  <img src={headerImg} alt="Header Img" className="rounded-img" />
+                  <img src={bannerImg} alt="Header Img" className="rounded-img" />
                 </div>}
             </TrackVisibility>
           </Col>

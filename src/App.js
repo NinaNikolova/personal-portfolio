@@ -30,7 +30,7 @@ function App() {
     <LanguageProvider>
       <div className="App">
         <NavBar theme={theme} toggleTheme={toggleTheme} />
-        <Banner />
+        <Banner theme={theme} />
         <Skills />
         <Softskills />
         <Projects />
