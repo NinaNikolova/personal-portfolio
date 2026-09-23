@@ -5,6 +5,7 @@ import projImg2 from "../assets/img/project-img2.png";
 import projImg3 from "../assets/img/project-img3.png";
 import projImg4 from "../assets/img/project-img4.png";
 import projImg5 from "../assets/img/project-img5.png";
+import projImg6 from "../assets/img/project-img6.png";
 import projImg7 from "../assets/img/project-img7.png";
 import projImg8 from "../assets/img/project-img8.png";
 import projImg9 from "../assets/img/project-img9.png";
@@ -46,9 +47,15 @@ const projectsMeta = [
     img: projImg8
   },
   {
-    key: "quizApp",
-    title: "Software Technologies Quiz App",
-    imgUrl: "https://fmi-master-quizes.vercel.app/",
+    key: "accountant",
+    title: "Accountant App",
+    imgUrl: "https://accountant-livid.vercel.app/",
+    img: projImg6
+  },
+    {
+    key: "angular",
+    title: "Angular -detailed information",
+    imgUrl: "https://angular-rho-umber.vercel.app/",
     img: projImg10
   },
   {
