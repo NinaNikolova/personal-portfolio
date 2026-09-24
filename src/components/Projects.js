@@ -78,7 +78,7 @@ const projectsMeta = [
     img: projImg5
   },
     {
-    key: "B2114DATCompiler",roj
+    key: "B2114DATCompiler",
     title: "B2114 DAT Compiler",
     imgUrl: "https://www.b2114-datcompiler.xyz/",
     img: projImg11
