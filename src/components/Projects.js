@@ -10,6 +10,7 @@ import projImg7 from "../assets/img/project-img7.png";
 import projImg8 from "../assets/img/project-img8.png";
 import projImg9 from "../assets/img/project-img9.png";
 import projImg10 from "../assets/img/project-img10.png";
+import projImg11 from "../assets/img/project-img11.png";
 import colorSharp2 from "../assets/img/color-sharp2.png";
 import 'animate.css';
 import TrackVisibility from 'react-on-screen';
@@ -75,6 +76,12 @@ const projectsMeta = [
     title: "GolfClubAirSofia",
     imgUrl: "https://golfclubsofia.com/",
     img: projImg5
+  },
+    {
+    key: "B2114DATCompiler",roj
+    title: "B2114 DAT Compiler",
+    imgUrl: "https://www.b2114-datcompiler.xyz/",
+    img: projImg11
   },
 ];
 
