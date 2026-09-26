@@ -20,12 +20,6 @@
       <stop offset="0%" stop-color="#f5e2b8" stop-opacity="0.95"/>
       <stop offset="100%" stop-color="#e6c78f" stop-opacity="0.95"/>
     </linearGradient>
-    <symbol id="boat" viewBox="-10 -10 180 100">
-      <rect x="38" y="-8" width="4" height="68" fill="#0a2f3f"/>
-      <path d="M40 60 V-6 L98 60 Z" fill="#ffffff" stroke="#0a2f3f" stroke-width="2"/>
-      <path d="M40 60 V14 L14 60 Z" fill="#eef3f5" stroke="#0a2f3f" stroke-width="2"/>
-      <path d="M0 60 h150 l-20 22 h-110 z" fill="#0a2f3f"/>
-    </symbol>
   </defs>
 
   <rect width="1600" height="900" fill="url(#skySea)"/>
@@ -44,10 +38,6 @@
 
   <path d="M0 470 Q 200 440 400 470 T 800 470 T 1200 470 T 1600 470 V900 H0 Z" fill="#38bcd6" opacity="0.5"/>
   <path d="M0 540 Q 200 505 400 540 T 800 540 T 1200 540 T 1600 540 V900 H0 Z" fill="#1aa0c0" opacity="0.55"/>
-
-  <use href="#boat" width="150" height="90" transform="translate(880,470)"/>
-  <use href="#boat" width="150" height="90" transform="translate(1080,510) scale(0.75)"/>
-  <use href="#boat" width="150" height="90" transform="translate(1210,440) scale(0.55)"/>
 
   <path d="M0 610 Q 200 575 400 610 T 800 610 T 1200 610 T 1600 610 V900 H0 Z" fill="#7fe3d8" opacity="0.4"/>
 

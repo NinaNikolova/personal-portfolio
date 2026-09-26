@@ -70,7 +70,7 @@ export const NavBar = ({ theme, toggleTheme }) => {
                 aria-label={theme === 'dark' ? t.theme.ariaToLight : t.theme.ariaToDark}
                 title={theme === 'dark' ? t.theme.toLight : t.theme.toDark}
               >
-                {theme === 'dark' ? <Sun size={20} /> : <MoonStarsFill size={20} />}
+                {theme === 'dark' ? <Sun size={17} /> : <MoonStarsFill size={17} />}
               </button>
               <button
                 type="button"

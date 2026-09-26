@@ -7,6 +7,7 @@ import 'animate.css';
 import TrackVisibility from 'react-on-screen';
 import Button from 'react-bootstrap/Button';
 import { useLanguage } from '../i18n/LanguageContext';
+import { ParticleField } from './ParticleField';
 
 export const Banner = ({ theme }) => {
   const { t } = useLanguage();
@@ -55,6 +56,7 @@ export const Banner = ({ theme }) => {
   console.log(index);
   return (
     <section className="banner" id="home">
+      <ParticleField theme={theme} />
       <Container>
         <Row className="aligh-items-center">
           <Col xs={12} md={6} xl={7}>
