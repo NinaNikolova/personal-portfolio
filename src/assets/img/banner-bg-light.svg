@@ -27,13 +27,6 @@
   <circle cx="1280" cy="170" r="280" fill="url(#sunGlow)"/>
   <circle cx="1280" cy="170" r="75" fill="#fffdf0"/>
 
-  <g opacity="0.7">
-    <path d="M60 120 q14 -12 28 0" stroke="#ffffff" stroke-width="4" fill="none" stroke-linecap="round"/>
-    <path d="M130 90 q14 -12 28 0" stroke="#ffffff" stroke-width="4" fill="none" stroke-linecap="round"/>
-    <path d="M980 80 q14 -12 28 0" stroke="#ffffff" stroke-width="3" fill="none" stroke-linecap="round"/>
-    <path d="M700 60 q14 -12 28 0" stroke="#ffffff" stroke-width="3" fill="none" stroke-linecap="round"/>
-  </g>
-
   <rect width="1600" height="900" fill="url(#textScrim)"/>
 
   <path d="M0 470 Q 200 440 400 470 T 800 470 T 1200 470 T 1600 470 V900 H0 Z" fill="#38bcd6" opacity="0.5"/>

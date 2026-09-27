@@ -25,6 +25,14 @@
       Learn how to configure a non-root public URL by running `npm run build`.
     -->
     <title>Nina's portfolio</title>
+    <!-- Apply the saved theme before first paint so light mode doesn't flash dark -->
+    <script>
+      (function () {
+        var theme = 'dark';
+        try { theme = localStorage.getItem('portfolio-theme') || 'dark'; } catch (e) {}
+        document.documentElement.setAttribute('data-theme', theme);
+      })();
+    </script>
   </head>
   <body>
     <noscript>You need to enable JavaScript to run this app.</noscript>

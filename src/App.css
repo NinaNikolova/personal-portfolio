@@ -350,6 +350,21 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   margin-bottom: 20px;
   display: block;
 }
+@media (max-width: 991px) {
+  .banner h1 {
+    font-size: 50px;
+  }
+}
+@media (max-width: 767px) {
+  .banner h1 {
+    font-size: 38px;
+  }
+}
+@media (max-width: 480px) {
+  .banner h1 {
+    font-size: 32px;
+  }
+}
 .banner p {
   color: #B8B8B8;
   font-size: 18px;
